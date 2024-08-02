@@ -3,29 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Delícia</title>
+    <title>Meu Site Bonito</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Pizzaria Delícia</h1>
+        <div class="container">
+            <h1>Meu Site Bonito</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        <section class="pizza-images">
-            <div class="pizza-item">
-                <img src="pizza1.jpg" alt="Pizza 1">
-                <h3>Pizza de Calabresa</h3>
-            </div>
-            <div class="pizza-item">
-                <img src="pizza2.jpg" alt="Pizza 2">
-                <h3>Pizza Margherita</h3>
-            </div>
-            <div class="pizza-item">
-                <img src="pizza3.jpg" alt="Pizza 3">
-                <h3>Pizza Quatro Queijos</h3>
-            </div>
-        </section>
-    </main>
+    <section id="inicio" class="section">
+        <div class="container">
+            <h2>Bem-vindo ao Meu Site</h2>
+            <p>Este é um exemplo de como criar um site bonito usando HTML e CSS.</p>
+        </div>
+    </section>
+    
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe dedicada a criar experiências web incríveis para nossos clientes.</p>
+        </div>
+    </section>
+    
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Design Web</li>
+                <li>Desenvolvimento Front-end</li>
+                <li>Otimização de SEO</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Site Bonito. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
