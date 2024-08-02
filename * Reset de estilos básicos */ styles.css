@@ -1,0 +1,42 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Estilos das imagens de pizza */
+.pizza-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.pizza-item {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.pizza-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pizza-item h3 {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
